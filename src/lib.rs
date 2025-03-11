@@ -81,7 +81,6 @@ impl HopData {
         //checksum calculate
         let icmp_packet = IcmpPacket::new(echo_packet.packet()).unwrap();
         echo_packet.set_checksum(checksum(&icmp_packet));
-
         let check = Instant::now();
         tx.send_to(echo_packet, destination)?;
 

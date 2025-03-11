@@ -1,5 +1,5 @@
 [package]
-name = "ichirp"
+name = "pvtrace"
 version = "0.1.0"
 edition = "2021"
 
